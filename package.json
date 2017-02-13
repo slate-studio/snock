@@ -1,0 +1,28 @@
+{
+  "name": "snock",
+  "version": "0.1.1",
+  "description": "Mock http requests based on swagger spec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisPopov15/snock.git"
+  },
+  "keywords": [
+    "swagger",
+    "mock"
+  ],
+  "author": "Denis Popov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisPopov15/snock/issues"
+  },
+  "homepage": "https://github.com/DenisPopov15/snock#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "faker": "^3.1.0",
+    "nock": "^9.0.4"
+  }
+}
