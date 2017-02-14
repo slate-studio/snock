@@ -29,8 +29,10 @@ const snock = (swaggerSchemaUri, S) => {
     var method = heApiClient[tag].operations[operationID].method
     var actionPath = path(tag, operationID, requestParams)
 
-    nock(apiHost)[method](actionPath)
+    var mocked = nock(apiHost)[method](actionPath)
       .reply(response.status, response.object)
+
+    return mocked
   }
 
   const path = (tag, operationID, params) => {
