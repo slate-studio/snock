@@ -4,8 +4,9 @@ const _         = require('lodash');
 const faker     = require('faker')
 const nock      = require('nock')
 
-const snock = (swaggerSchemaPath, S) => {
+const snock = (swaggerSchemaUri, S) => {
   const apiHost = `http://${S.host}`
+  const swaggerSchemaPath = _.replace(swaggerSchemaUri, apiHost, '')
   nock(apiHost)
     .get(swaggerSchemaPath)
     .reply(200, S)
