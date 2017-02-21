@@ -1,6 +1,6 @@
 {
   "name": "snock",
-  "version": "0.1.3",
+  "version": "0.1.2",
   "description": "Mock http requests based on swagger spec",
   "main": "index.js",
   "scripts": {
