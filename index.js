@@ -94,10 +94,8 @@ const snock = (swaggerSchemaUri, S) => {
         return fakeObject
       }
     }
+    return {path: path, model: model, mock: mock}
   })
-
-
-  return {path: path, model: model, mock: mock}
 }
 
 module.exports = snock
